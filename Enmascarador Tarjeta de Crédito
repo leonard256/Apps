@@ -1,0 +1,7 @@
+def run():
+    cc = input ('Ingrese el número de tarjeta de crédito: ')
+    cc_slice = cc[-4:]
+    print(('#' * (len(cc)-4)) + cc_slice)
+
+if __name__ == '__main__':
+    run()
