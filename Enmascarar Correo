@@ -14,4 +14,5 @@ def enmascarar(conversion):
     #Se hace la unión
     return conversion + '@' + usuario[1]
 
-print(enmascarar('correo12345@gmail.com'))
+mail = input('Ingrese un correo: ')
+print(enmascarar(mail))
