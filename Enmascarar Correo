@@ -1,0 +1,17 @@
+def enmascarar(conversion):
+    #Se divide el usuario en una lista a partir de la arroba:
+    usuario = conversion.split('@')
+
+    #el usuario se divide en una parte inicial conformada por 3 caracteres, 
+    # asimismo en la parte final
+    usuario_slice = usuario[0][:3]
+    usuario_slice1 = usuario[0][-3:]
+
+    #Se calcula la cantidad a asteriscos a usar de acuerdo a la ext. del usuario
+    asteriscos = len(usuario[0]) - 6
+    conversion = usuario_slice + (asteriscos * "*") + usuario_slice1
+
+    #Se hace la unión
+    return conversion + '@' + usuario[1]
+
+print(enmascarar('correo12345@gmail.com'))
