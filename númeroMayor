@@ -1,0 +1,17 @@
+"""El código crea una lista de números y luego utiliza un bucle for para encontrar el número
+máximo en la lista. El número máximo se almacena en la variable 'num_max' y se compara con cada 
+elemento de la lista."""
+
+x = [1, 2, 5, 8, 2, 3, 25, 2]
+
+def hallar_mayor(lista):
+    num_max = 0
+
+    for i in x:
+        if i > num_max:
+            num_max = i
+
+    return num_max
+
+maximo = hallar_mayor(x)
+print('el número mayor de la lista es ' + str(maximo))
