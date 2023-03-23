@@ -3,10 +3,23 @@ máximo en la lista. El número máximo se almacena en la variable 'num_max' y s
 elemento de la lista."""
 
 x = [1, 2, 5, 8, 2, 3, 25, 2]
-num_max = 0
 
-for i in x:
-    if i > num_max:
-        num_max = i
+def hallar_mayor(lista):
+    num_max = 0
 
-print('el número mayor de la lista es ' + str(num_max))
+    for i in x:
+        if i > num_max:
+            num_max = i
+
+    return num_max
+
+maximo = hallar_mayor(x)
+print('el número mayor de la lista es ' + str(maximo))
+
+"""si se quiere hacer más eficiente el código se puede usar la función max:
+
+x = [1, 2, 5, 8, 2, 3, 25, 2]
+
+num_max = max(x)
+
+print('el número mayor de la lista es ' + str(num_max))"""
