@@ -1,0 +1,13 @@
+#Calcula el promedio de las notas ingresadas a través de una lista
+
+notas = [ 1, 2, 5, 4, 2, 3, 5, 5]
+
+def promedio(lista):
+    suma = sum(lista)
+    notas = len(lista)
+    promedio = suma / notas
+    return promedio
+
+promedio_notas = promedio(notas)
+
+print(promedio_notas)
