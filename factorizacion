@@ -1,0 +1,12 @@
+n = int(input('ingrese el número para hallar su factorial -> '))
+
+if n < 0:
+    print ("No se puede realizar factorial a números negativos")
+elif n == 0:
+    print ("El factorial de 0 es 1")
+else: 
+    resultado = 1
+    while n > 0:
+        resultado = resultado * n
+        n = n-1
+    print(resultado)
